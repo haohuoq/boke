@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PluginInstall>
+ <main>
+  <PluginName>HotLogForPJBlog</PluginName>
+  <PluginTitle>Hot Article</PluginTitle>
+  <PluginType>sidebar</PluginType>
+  <PluginHtmlCode><![CDATA[<$HotLog$>]]></PluginHtmlCode>
+  <PluginASPCode><![CDATA[<%
+        function HotArticle(ByVal action)
+             Dim blog_HotArticle
+             IF Not IsArray(Application(CookieName&"_blog_HotArticle")) or action=2 Then
+             	Dim book_HotArticles,book_HotArticle
+             	Set book_HotArticles=Conn.Execute("SELECT top 15 C.*,L.cate_ID,L.cate_Secret FROM blog_Content AS C,blog_Category AS L where L.cate_ID=C.log_CateID and L.cate_Secret=false and C.log_IsDraft=false order by log_ViewNums Desc")
+             	SQLQueryNums=SQLQueryNums+1
+             	TempVar=""
+             	Do While Not book_HotArticles.EOF
+             	    if book_HotArticles("cate_Secret") then 
+                       book_HotArticle=book_HotArticle&TempVar&book_HotArticles("log_ID")&"|,|"&book_HotArticles("log_Author")&"|,|"&book_HotArticles("log_PostTime")&"|,|"&"[隐藏分类日志]"
+             		 elseif book_HotArticles("log_IsShow") then
+                       book_HotArticle=book_HotArticle&TempVar&book_HotArticles("log_ID")&"|,|"&book_HotArticles("log_Author")&"|,|"&book_HotArticles("log_PostTime")&"|,|"&book_HotArticles("log_title")
+             		 else
+                       book_HotArticle=book_HotArticle&TempVar&book_HotArticles("log_ID")&"|,|"&book_HotArticles("log_Author")&"|,|"&book_HotArticles("log_PostTime")&"|,|"&"[隐藏日志]"
+             		end if
+             		TempVar="|$|"
+             		book_HotArticles.MoveNext
+             	Loop
+             	Set book_HotArticles=Nothing
+             	blog_HotArticle=Split(book_HotArticle,"|$|")
+             	Application.Lock
+             	Application(CookieName&"_blog_HotArticle")=blog_HotArticle
+             	Application.UnLock
+             Else
+             	blog_HotArticle=Application(CookieName&"_blog_HotArticle")
+             End IF
+             
+             if action<>2 then
+			Dim urlLink
+              dim HotArticle_Items,HotArticle_Item
+             	For Each HotArticle_Items IN blog_HotArticle
+             	 HotArticle_Item=Split(HotArticle_Items,"|,|")
+			if blog_postFile = 2 then
+				urlLink = "article/"&HotArticle_Item(0)&".htm"
+			else 
+				urlLink = "article.asp?id="&HotArticle_Item(0)
+			end if
+             	 HotArticle=HotArticle&"<a class=""sideA"" href="&urlLink&" title="""&HotArticle_Item(1)&" 于 "&DateToStr(HotArticle_Item(2),"Y/m/d H:I A")&" 发表该日志"&CHR(10)&CCEncode(CutStr(HotArticle_Item(3),25))&""">"&CCEncode(CutStr(HotArticle_Item(3),25))&"</a>"
+             	Next
+              end if
+       end function
+       '处理最新日志内容
+        Dim HotArticle_code
+        if Session(CookieName&"_LastDo")="DelArticle" or Session(CookieName&"_LastDo")="AddArticle" or Session(CookieName&"_LastDo")="EditArticle" then HotArticle(2)
+    	HotArticle_code=HotArticle(0)
+        side_html_default=replace(side_html_default,"<$HotLog$>",HotArticle_code)
+        side_html=replace(side_html,"<$HotLog$>",HotArticle_code)
+    %>]]></PluginASPCode>
+  <PluginPath><![CDATA[guestbook.asp]]></PluginPath>
+  <SettingFile></SettingFile>
+  <CreateTableSQL><![CDATA[]]></CreateTableSQL>
+  <UpdateTableSQL><![CDATA[]]></UpdateTableSQL>
+  <DropTable></DropTable>
+  <Author>Miles</Author>
+  <pubDate>2005-9-26</pubDate>
+  <About><![CDATA[PJblog 热门日志插件 1.1\n可以在首页显示热门日志]]></About>
+ </main>
+</PluginInstall>

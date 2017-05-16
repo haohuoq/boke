@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PluginOptions>
+ <Key name="RandomPage" value="10" type="input" description="随机显示条数" size="8"/>
+ <Key name="RandomMod" value="0" type="select" description="是否刷新缓存">
+    <option value="0">是</option>
+   <option value="1">否</option>
+ </Key>
+</PluginOptions>

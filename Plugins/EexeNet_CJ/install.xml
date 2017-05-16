@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PluginInstall>
+ <main>
+  <PluginName>Article_CJ</PluginName>
+  <PluginTitle>EexeNet文章采集插件V1.0</PluginTitle>
+  <PluginType>function</PluginType>
+  <PluginHtmlCode><![CDATA[]]></PluginHtmlCode>
+  <PluginASPCode><![CDATA[]]></PluginASPCode>
+  <PluginPath><![CDATA[]]></PluginPath>
+  <ConfigPath>index.asp</ConfigPath>
+  <SettingFile></SettingFile>
+  <CreateTableSQL><![CDATA[]]></CreateTableSQL>
+  <UpdateTableSQL><![CDATA[]]></UpdateTableSQL>
+  <DropTable></DropTable>
+  <Author>EexeNet</Author>
+  <pubDate>2007-12-31</pubDate>
+  <About><![CDATA[EexeNet_采集插件V1.0 有问题访问:http://Eexe.net]]></About>
+ </main>
+</PluginInstall>

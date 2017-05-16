@@ -1,0 +1,243 @@
+﻿body{
+	margin:0;padding:0;
+	/*background:url('bg.gif');*/
+}
+.disnone{
+	display:none
+	}
+.font12{
+	font-size:12px
+	}
+#container {
+	background:#ffffff url(head_bg.gif) repeat-x center top; /*MARGIN: 0px auto;WIDTH: 990px;*/ PADDING: 0px; TEXT-ALIGN: center;
+}
+#container #header {
+	width:990px;height:129px;background:url('logo.gif') no-repeat left 30px;margin:0px auto;
+}
+#container #header #blogname {
+	DISPLAY: none;
+	text-align:left;
+	width:960px; 
+	height:120px;
+}
+#container #header #blogname #blogTitle {
+	DISPLAY: none
+}
+#container #header #menu {
+	/*DISPLAY: none*/
+	padding-top:86px; padding-left:65px; 
+}
+#container #header #menu #Left { display:none}
+#container #header #menu #Right {display:none}
+#container #header #menu UL LI.menuL,#container #header #menu UL LI.menuR{ display:none}
+#container #header #menu UL {
+	/*FLOAT: left;*/ MARGIN: 0px; LIST-STYLE-TYPE: none; HEIGHT: 29px; display:inline; padding:0px;}
+#container #header #menu UL LI {
+	FLOAT: left; HEIGHT: 29px; margin:0px 5px;
+}
+.menuDiv {
+	PADDING: 0px; margin:0px; WIDTH: 1px;background:url(limid.gif) no-repeat;
+}
+#container #Tbody {
+	WIDTH: 990px; TEXT-ALIGN: left;padding:10px 0 0 0;margin:0 auto;/*background:#ffffff*/
+}
+#sidebar {
+	FLOAT: right; MARGIN: 0px; WIDTH: 300px; TEXT-ALIGN: left;/*background:url('sidebarline.gif') repeat-y left top ;*/padding:0;
+}
+#innersidebar {
+padding:0;margin:0px;width:300px;/*overflow:hidden;*/
+
+}
+#sidebar-topimg {
+display:none;
+}
+#sidebar-bottomimg {
+	OVERFLOW: hidden; height:0px;
+}
+.sidepanel {
+	MARGIN: 0px auto; WIDTH: 300px
+}
+/*#Side_Calendar .Ptitle{
+	PADDING-LEFT: 0px; FONT-WEIGHT: bold; FONT-SIZE: 14px; MARGIN: 0px 0 0 0; COLOR: #dfdfdf; LINE-HEIGHT: 33px; FONT-FAMILY: Verdana,"微软雅黑","黑体"; HEIGHT: 33px; TEXT-ALIGN: left; 
+}
+*/.Ptitle {
+	PADDING-LEFT: 0px; FONT-WEIGHT: bold; FONT-SIZE: 14px; MARGIN: 0px 0 0 0; COLOR: #000000; LINE-HEIGHT: 33px; FONT-FAMILY: Verdana,"微软雅黑","黑体"; HEIGHT: 33px; TEXT-ALIGN: left;background:url(tool_bg.gif); padding-left:10px;
+}
+.Pcontent {
+	PADDING-LEFT: 0px; LINE-HEIGHT: 150%; PADDING-TOP: 4px; TEXT-ALIGN: left;width:300px;color:#666
+}
+.Pfoot {
+	MARGIN: 0px 0px 0px; height:10px;
+}
+#mainContent {
+	FLOAT: left; MARGIN: 0px; WIDTH: 670px; FONT-FAMILY: Verdana, serif; TEXT-ALIGN: left;/*background:#fff;*/padding:0px;
+}
+#innermainContent {
+	OVERFLOW: visible; float:left;
+}
+#mainContent-topimg {
+	display:none
+}
+#mainContent-bottomimg {
+	OVERFLOW: hidden; HEIGHT: 10px
+}
+.content-width {
+	MARGIN: 0px 0 0 0; WIDTH: 670px;
+}
+.pageContent {
+	PADDING-RIGHT: 3px 0px;  MARGIN: 0px auto;HEIGHT: 18px; TEXT-ALIGN: left
+}
+.NavTitle {
+	FONT-WEIGHT: bold; FLOAT: left
+}
+.page {
+	PADDING-RIGHT: 5px; HEIGHT: 18px
+}
+.page UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+.page UL LI {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; FLOAT: left; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.page UL LI.PageL {
+	WIDTH: 9px; HEIGHT: 16px
+}
+.page UL LI.PageR {
+	WIDTH: 9px; HEIGHT: 16px
+}
+.PageLbutton {
+	DISPLAY: block; BACKGROUND: url(../../images/BttnLeft.gif) 0px 0px; WIDTH: 9px; HEIGHT: 16px
+}
+.PageRbutton {
+	DISPLAY: block; BACKGROUND: url(../../images/BttnRight.gif) 0px 0px; WIDTH: 9px; HEIGHT: 16px
+}
+.Content {
+	MARGIN: 0px auto 20px auto; FONT-FAMILY: Verdana, serif; padding-bottom:16px; background:url(art_line.gif) bottom center no-repeat;}
+.Content-top {
+	PADDING:0px 0px 5px 0px; TEXT-ALIGN: left;font-weight:normal; border-bottom:1px #CCCCCC dashed; /*background:url(artioc.gif) no-repeat; padding-left:60px;*/
+}
+.Content-top .ContentLeft {
+	FLOAT: left; WIDTH: 0px
+}
+.Content-top .ContentRight {
+	FLOAT: right; WIDTH: 0px
+}
+.Content-top .ContentTitle {
+	 PADDING-BOTTOM:2px; MARGIN: 0px; COLOR: #cc0000;font-family:微软雅黑,Verdana;font-size:24px;font-weight:normal
+}
+.Content-top .ContentTitle strong,.Content-top .ContentTitle b{font-weight:normal}
+
+
+.Content-top .ContentAuthor {
+	PADDING-LEFT: 2px; FONT-WEIGHT: normal; FONT-SIZE: 11px; MARGIN: 0px; COLOR: #b6b6b6; padding-top:4px;border-top:0px solid #DBDBD0;
+}
+.Content-body IMG {
+border:0;margin:0
+}
+.Content-body {
+	FONT-FAMILY: Verdana,  serif;MARGIN: 8px auto; OVERFLOW: hidden; WIDTH: 100%; LINE-HEIGHT: 180%; TEXT-ALIGN: left;font-size:14px;
+}
+.Content-body p{
+	margin:3px 0px; LINE-HEIGHT: 180%;
+}
+.Content-body a{ border-bottom:0px dotted #FFFF00}
+.Content-bottom {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; BACKGROUND: url(down.gif) repeat-x; PADDING-BOTTOM: 10px; COLOR: #666; PADDING-TOP: 1px; HEIGHT: 20px; TEXT-ALIGN: right
+}
+.Content-bottom UL {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 6px; LIST-STYLE-TYPE: none
+}
+.Content-bottom UL LI {
+	PADDING-RIGHT: 0px; DISPLAY: inline; PADDING-LEFT: 8px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.Content-bottom UL LI.bDiv {
+	
+}
+.Content-bottom .ContentBLeft {
+	FLOAT: left; WIDTH: 0px
+}
+.Content-bottom .ContentBRight {
+	FLOAT: right; WIDTH: 0px
+}
+.Content-Info {
+	PADDING: 0px; MARGIN: 5px 0px 6px;
+}
+.Content-Info .InfoAuthor {
+	TEXT-ALIGN: left
+}
+.Content-Info .InfoOther {
+	FLOAT: right; TEXT-ALIGN: right
+}
+.comment {
+	BORDER: #d7d7d7 1px solid; MARGIN: 10px 12px 4px; /* WIDTH: 620px;*/TEXT-ALIGN: left
+}
+.commentinfo {
+	FONT-SIZE: 11px; COLOR: #666;
+}
+.commenttop {
+	PADDING: 6px 4px;BORDER-BOTTOM: #d7d7d7 1px solid
+}
+.commentcontent {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; OVERFLOW: hidden; WIDTH: 95%; LINE-HEIGHT: 180%; PADDING-TOP: 10px
+}
+.UBBPanel {
+	BORDER: 0px dashed;BACKGROUND: repeat-x;border:1px solid #ccc; 
+}
+.UBBTitle IMG {
+	/*DISPLAY: none*/
+}
+.UBBTitle {
+	PADDING-LEFT: 8px; FONT-SIZE: 12px; COLOR: #999; FONT-FAMILY: Georgia,Helvetica, sans-serif,Times New Roman,宋体;border-bottom:1px solid #ccc; 
+}
+.UBBContent {
+	PADDING: 6px;LINE-HEIGHT: 160%;color:#666
+}
+.UBBContent TEXTAREA {
+	MARGIN-BOTTOM: 2px; WIDTH: 95%
+}
+.UBBContent A SPAN {
+	FONT-WEIGHT: bold; COLOR: #cc0000
+}
+.UBBContent A:hover SPAN {
+	FONT-WEIGHT: bold; COLOR: #cc0000
+}
+.UBBLink:link {
+	FONT-SIZE: 12px; FONT-FAMILY: verdana
+}
+.UBBLink:visited {
+	FONT-SIZE: 12px; FONT-FAMILY: verdana
+}
+#MsgContent {
+	MARGIN: 10px auto 10px auto; width:550px;/*WIDTH: 630px; */PADDING: 20px 10px 0px 10px; border:1px solid #d7d7d7;
+}
+#MsgContent #MsgHead {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; FONT-WEIGHT: bold; PADDING-BOTTOM: 4px; /*WIDTH: 620px;*/ COLOR: #000000; PADDING-TOP: 4px; BORDER-BOTTOM: #ccc 1px dotted; TEXT-ALIGN: left;font-size:14px
+}
+#MsgContent #MsgBody {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; /*WIDTH: 620px;*/ COLOR: #666; LINE-HEIGHT: 180%; PADDING-TOP: 4px
+}
+.LDialog {
+	BORDER-RIGHT: #795b50 1px solid; PADDING-RIGHT: 1px; BORDER-TOP: #795b50 1px solid; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; MARGIN: 3px auto; BORDER-LEFT: #795b50 1px solid; PADDING-TOP: 1px; BORDER-BOTTOM: #795b50 1px solid
+}
+.LDialog .LHead {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; FONT-WEIGHT: bold; BACKGROUND: #faf7ef; PADDING-BOTTOM: 1px; COLOR: #fff; PADDING-TOP: 1px; TEXT-ALIGN: center
+}
+.LDialog .LBody {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; LINE-HEIGHT: 200%; PADDING-TOP: 4px
+}
+#container #foot {
+	FONT-SIZE: 11px; PADDING: 20px 0px 20px; /*HEIGHT: 50px; */TEXT-ALIGN: center; line-height:150%;background:#eee url(foot_bg.gif) repeat-x top center
+}
+
+#container #foot a { color:#333;
+}
+#container #foot a:hover { color:#333
+}
+
+#container #foot p {
+	FONT-SIZE: 11px; margin:0px;line-height:150%
+}
+
+.attachmentBody {
+	FONT-SIZE: 12px; MARGIN: 0px
+}

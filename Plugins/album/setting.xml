@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PluginOptions>
+ <Key name="Page" value="12" type="input" description="每页显示图片数量(个)" size="5"/>
+ <Key name="Bank" value="3" type="input" description="相片分类每行显示数量" size="5"/>
+ <Key name="newh" value="3" type="input" description="相片列表每行显示数量" size="5"/>
+ <Key name="Commentnum" value="15" type="input" description="最新评论调用数量" size="5"/>
+ <Key name="photow" value="58" type="input" description="首页调用图片尺寸宽" size="5"/>
+ <Key name="photoh" value="58" type="input" description="首页调用图片尺寸高" size="5"/>
+ <Key name="photos" value="3" type="input" description="首页调用图片个数" size="5"/>
+  <Key name="rnd" value="1" type="select" description="首页是否随机调用图片">
+ <option value="1">允许</option>
+ <option value="0">禁止</option>
+ </Key>
+ <Key name="start" value="1" type="select" description="是否开放相册">
+   <option value="1">开放</option>
+   <option value="0">关闭</option>
+ </Key>
+ 
+ <Key name="Database" value="data.asp" type="input" description="相册数据库文件地址：" size="40"/>
+</PluginOptions>

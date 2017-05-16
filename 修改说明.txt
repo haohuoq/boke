@@ -1,0 +1,28 @@
+网站后台进入方法：
+
+在前台输入管理员用户名jinbenli,密码123456 点击系统管理，再次输入密码进入。
+
+添加管理员：
+
+前台注册申请新用户-进入后台-账户与权限--账户管理-将用户权限提升为SupAdmin.
+-------------------------------------------------------------------
+需要修改的文件：
+
+1.footer.asp
+修改网站底部信息等，统计代码可以放在百度统计这个位置。
+
+2.本博客程序带QQ快捷登录功能，需要修改\Plugins\QQconnect\oauth\config.asp文件：
+'------请修改以下行
+Const oauth_consumer_key=""  'App ID	申请地址http://connect.opensns.qq.com/
+Const oauth_consumer_secret = ""  'App KEY
+oauth_siteurl="http://www.jinbenli.com/" '博客安装目录，以http://开头，以/结尾。
+
+3.腾讯微博模块:
+后台-界面与插件-设置模块-weibo模块-编辑HTML。
+填入相应的个人微博模块代码，代码获取地址http://open.t.qq.com/apps/pendant/explain.php
+或者将代码其中的'jinbenli"直接该为你自己的微博名称。
+
+4.网站LOGO可以修改对应皮肤文件夹（skins）中images中的图片。
+
+5.生成静态文件：站点基本设置-初始化数据-开始Ajax重建日志。
+

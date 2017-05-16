@@ -1,0 +1,138 @@
+﻿  /*---其他样式---*/  
+ .userpass{border: 1px solid #A3BEC3;font-size:14px;font-family: Verdana, georgia, Helvetica, sans-serif;
+ background:#FAF7EF;/*width:200px;*/height:20px;line-height:20px}
+ .userpass:hover,.userpass:focus{border-color:#A3BEC3;background:#EFFAF7}
+ .inputBox{border:1px solid #666;font-size:12px;background:#fff}
+ .inputBox:hover,.inputBox:focus{border-color:#A3BEC3;}
+ .userbutton{border:1px #ccc solid;font-size:12px;height:25px;padding:0 5px;}
+ .LinkTable{margin:5px 10px 5px 0px;}
+ .commentTable{}
+ .high1{font-weight:bold;color:#f00;}
+ .CateIcon{display:none}
+  /*日历样式*/
+ #Calendar_Body {
+	MARGIN: 5px 0px 5px 0px; LINE-HEIGHT: 120%
+}
+/*日历样式-顶部*/
+#Calendar_Body #Calendar_Top {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; FONT-WEIGHT: bold; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; HEIGHT: 18px; TEXT-ALIGN: center;color:#666
+}
+ /*日历样式-顶部按钮-左*/
+
+#Calendar_Body #Calendar_Top #LeftB {
+	BACKGROUND: url(arrow_l.gif); FLOAT: left; OVERFLOW: hidden; WIDTH: 5px; CURSOR: pointer; HEIGHT: 8px
+}
+ /*日历样式-顶部按钮-右*/
+
+#Calendar_Body #Calendar_Top #RightB {
+	BACKGROUND: url(arrow_r.gif); FLOAT: right; OVERFLOW: hidden; WIDTH: 5px; CURSOR: pointer; HEIGHT: 8px;margin-right:5px
+}
+ /*日历样式-星期*/
+
+#Calendar_Body #Calendar_week {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 2%; FONT-WEIGHT: bold; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; HEIGHT: 20px;; TEXT-ALIGN: center;
+}
+UL.Week_UL {
+	PADDING-RIGHT: 0px; DISPLAY: inline; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+UL.Week_UL LI {
+	PADDING-RIGHT: 0px; DISPLAY: inline; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 3px 0px 2px; WIDTH: 40px; COLOR: #666; PADDING-TOP: 0px;
+}
+ /*日历样式-日期*/
+
+.Calendar_Day {
+	COLOR: #666; HEIGHT: 24px; TEXT-ALIGN: center;margin:5px 0;*margin:5px 0 !important;*margin:4px 0}
+.Calendar_Day UL.Day_UL {
+	DISPLAY: inline; LIST-STYLE-TYPE: none;
+}
+.Calendar_Day UL.Day_UL LI {
+	DISPLAY: inline; FLOAT: left; WIDTH: 38px; margin-left:3px;
+}
+ /*日历样式-日期-超链接样式*/
+
+.DayA A{
+DISPLAY: block;FONT-SIZE: 9px;line-height:20px;HEIGHT: 24px;/*width:24px;*/margin:1px;*margin:4px !important;*margin:1px;color:#fff;background:#ccc;color:#fff;cursor:default; cursor:pointer}
+.DayA A:hover {
+	COLOR: #333333
+}
+.DayA A:visited {
+	FONT-WEIGHT: bold; COLOR: #26a7f1
+}
+ /*日期选中*/
+
+.DayA A.click {
+	FONT-WEIGHT: bold; CURSOR: pointer; COLOR: #fff;background:#cc0000
+}
+.DayA A.click:link {
+	FONT-WEIGHT: bold; CURSOR: pointer; COLOR: #fff;background:#cc0000
+}
+.DayA A.click:visited {
+	FONT-WEIGHT: bold; CURSOR: pointer; COLOR: #fff;background:#cc0000
+}
+.DayA A.click:hover {
+	FONT-WEIGHT: bold; CURSOR: pointer; COLOR: #ff9600;background:#cc0000;text-decoration:underline
+}
+ /*今天*/
+
+.DayA A.today {
+	BACKGROUND-COLOR: #cc0000;FONT-WEIGHT: bold; CURSOR: default; COLOR: #fff; cursor:pointer;
+}
+ /*非本月日期*/
+
+.DayA A.otherday {
+	VISIBILITY: hidden; CURSOR: default; COLOR: #f5f5f5; TEXT-DECORATION: none
+}
+.DayA A.otherday:link {
+	CURSOR: default; COLOR: #f5f5f5
+}
+.DayA A.otherday:visited {
+	CURSOR: default; COLOR: #f5f5f5
+}
+.DayA A.otherday:hover {
+	CURSOR: default; COLOR: #f5f5f5
+}
+ /*本日存在日记*/
+
+.DayA A.haveD {
+	CURSOR: pointer; BACKGROUND-COLOR: #000000;color:#ffffff;font-weight:bold
+}
+.DayA A.haveD:link {
+	COLOR: #ffffff
+}
+.DayA A.haveD:visited {
+	COLOR:#ffffff
+}
+.DayA A.haveD:hover {
+	COLOR:#ffffff;text-decoration:underline
+}
+ /*今天存在日记*/
+
+.DayA A.DayD {
+	CURSOR: pointer
+}
+.DayA A.DayD:link {
+	FONT-WEIGHT: bold; COLOR: #FFF; TEXT-DECORATION: none;BACKGROUND-COLOR: #F35407
+}
+.DayA A.DayD:visited {
+	FONT-WEIGHT: bold; COLOR: #FFF; TEXT-DECORATION: none
+}
+.DayA A.DayD:hover {
+	COLOR: #000; TEXT-DECORATION: underline
+}
+/*显示和隐藏置顶日志按钮*/
+
+.BttnC {
+	MARGIN-TOP: 6px; BACKGROUND: url(arrow_l.gif) no-repeat; FLOAT: right; WIDTH: 11px; CURSOR: pointer; HEIGHT: 11px
+}
+.BttnE {
+	MARGIN-TOP: 6px; BACKGROUND: url(arrow_r.gif) no-repeat; FLOAT: right; WIDTH: 11px; CURSOR: pointer; HEIGHT: 11px
+}
+#Side_Category IMG {
+	DISPLAY: none; PADDING-LEFT: 10px
+}
+#Side_Category A IMG {
+	DISPLAY: none
+}
+ 
+ 
+

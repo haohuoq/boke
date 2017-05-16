@@ -1,0 +1,84 @@
+﻿A:link {
+	COLOR: #000000; ;text-decoration:none
+}
+A:visited {
+	COLOR: #000000; ;text-decoration:none
+}
+A:hover {
+	COLOR: #cc0000;text-decoration:underline
+}
+.menuA:link {
+	/*margin:0px 0px;*/ FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #000; LINE-HEIGHT:28px; HEIGHT: 29px; TEXT-ALIGN: center; display:block; width:77px; font-family:Tahoma,"微软雅黑","黑体"
+}
+.menuA:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #000; TEXT-ALIGN: center;display:block;LINE-HEIGHT:28px; HEIGHT: 29px;width:77px; font-family:Tahoma,"微软雅黑","黑体"
+}
+.menuA:hover {
+	COLOR: #fff; TEXT-DECORATION: none; background:url(a_hover1.gif); font-family:Tahoma,"微软雅黑","黑体"
+}
+.menuB:link,.menuB:hover,.menuB:visited{
+	background:url(a_hover.gif); color:#fff; font-family:Tahoma,"微软雅黑","黑体"
+}
+
+
+.titleA:link {
+	COLOR: #000000; TEXT-ALIGN: left; TEXT-DECORATION: none ;font-family:微软雅黑;font-size:24px;font-weight:normal
+}
+.titleA:visited {
+	COLOR: #000000; TEXT-ALIGN: left; TEXT-DECORATION: none;font-family:微软雅黑;font-size:24px;font-weight:normal
+}
+.titleA:hover {
+	COLOR: #cc0000; TEXT-DECORATION: none;font-family:微软雅黑;font-size:24px;font-weight:normal
+}
+.titleB:link {
+	COLOR: #000; TEXT-ALIGN: left; TEXT-DECORATION: none ;font-size:12px;font-weight:normal
+}
+.titleB:visited {
+	COLOR: #000; TEXT-ALIGN: left; TEXT-DECORATION: none;font-size:12px;font-weight:normal
+}
+.titleB:hover {
+	COLOR: #cc0000; TEXT-DECORATION: underline;
+}
+.sideA:link {
+	MARGIN: 2px 0px;DISPLAY: block;  PADDING-TOP: 3px; PADDING-BOTTOM: 3px; padding-left:15px;OVERFLOW: hidden; COLOR: #777; LINE-HEIGHT: 19px; BORDER-BOTTOM: #d7d7d7 0px dotted; HEIGHT: 19px; TEXT-DECORATION: none;  background:url(dot.gif) 5px center no-repeat;
+}
+.sideA:visited {
+	MARGIN: 2px 0px;DISPLAY: block; PADDING-TOP: 3px;PADDING-BOTTOM: 3px; padding-left:15px; OVERFLOW: hidden;COLOR: #777; LINE-HEIGHT: 19px;  BORDER-BOTTOM: #d7d7d7 0px dotted; HEIGHT: 19px; TEXT-DECORATION: none; background:url(dot.gif) 5px center no-repeat;
+}
+.sideA:hover {
+	OVERFLOW: hidden; COLOR: #cc0000; HEIGHT: 19px; TEXT-DECORATION: none; padding-left:15px; LINE-HEIGHT: 19px;background:url(dot1.gif) 5px center no-repeat;
+}
+.sideB:link {
+	MARGIN-TOP: 2px; DISPLAY: block; MARGIN-BOTTOM: 2px; PADDING-BOTTOM: 3px; OVERFLOW: hidden; /*WIDTH: 234px; */ COLOR: #666; LINE-HEIGHT: 16px; PADDING-TOP: 3px; BORDER-BOTTOM: #d7d7d7 1px dotted; HEIGHT: 16px; TEXT-DECORATION: none
+}
+.sideB:visited {
+	MARGIN-TOP: 2px; DISPLAY: block; MARGIN-BOTTOM: 2px; PADDING-BOTTOM: 3px; OVERFLOW: hidden; /*WIDTH: 234px; */COLOR: #666; LINE-HEIGHT: 16px; PADDING-TOP: 3px; BORDER-BOTTOM: #d7d7d7 1px dotted; HEIGHT: 16px; TEXT-DECORATION: none
+}
+.sideB:hover {
+	OVERFLOW: hidden; COLOR: #7c71dd; HEIGHT: 16px; TEXT-DECORATION: none
+}
+.CategoryA:link {
+	font-family:Verdana;MARGIN-TOP: 2px; MARGIN-BOTTOM: 2px; PADDING-BOTTOM: 4px; OVERFLOW: hidden; COLOR: #666; LINE-HEIGHT: 200%; PADDING-TOP: 2px; BORDER-BOTTOM: #d7d7d7 1px dotted; HEIGHT: 16px; TEXT-DECORATION: none
+}
+.CategoryA:visited {
+	MARGIN-TOP: 2px; MARGIN-BOTTOM: 2px; PADDING-BOTTOM: 4px; OVERFLOW: hidden; COLOR: #666; LINE-HEIGHT: 200%; PADDING-TOP: 2px; BORDER-BOTTOM: #d7d7d7 1px dotted; HEIGHT: 16px; TEXT-DECORATION: none
+}
+.CategoryA:hover {
+	OVERFLOW: hidden; COLOR: #cc0000; HEIGHT: 16px; TEXT-DECORATION: none
+}
+.more:link {COLOR:#cc0000; TEXT-DECORATION: none; font-size:14px; padding-left:8px; border-left:3px solid #cc0000; font-weight:bold; float:right;}
+.more:visited {COLOR:#cc0000; TEXT-DECORATION: none;font-size:14px;padding-left:8px;border-left:3px solid #cc0000; font-weight:bold; float:right;}
+.more:hover {COLOR:#cc0000; TEXT-DECORATION: none;font-size:14px;padding-left:8px;border-left:3px solid #cc0000; font-weight:bold; float:right;}
+.contentlink:link{
+	color:#c0c0c0;text-decoration:none;
+}
+.contentlink:hover{
+	color:#cc0000;text-decoration:underline;
+}
+.contentlink:visited{
+	color:#c0c0c0;text-decoration:none;
+}
+.contentlink:visited:hover{
+	text-decoration:underline
+}
+.Content-bottom a{ text-decoration:underline}

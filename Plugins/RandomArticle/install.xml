@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PluginInstall>
+ <main>
+  <PluginName>RandomLogForPJBlog</PluginName>
+  <PluginTitle>Random Article</PluginTitle>
+  <PluginType>sidebar</PluginType>
+  <PluginHtmlCode><![CDATA[<$RandomLog$>]]></PluginHtmlCode>
+  <PluginASPCode><![CDATA[<%
+           function RandomArticle(ByVal action)
+             Dim blog_RandomArticle
+             	Dim Random_rs,Random_sql
+             	TempVar=""
+             	'=========================================
+             	'打开数据库操作
+				Randomize 
+             	Set Random_sql=Conn.Execute("SELECT top 10 C.*,L.cate_ID,L.cate_Secret FROM blog_Content AS C,blog_Category AS L where L.cate_ID=C.log_CateID and L.cate_Secret=false and C.log_IsDraft=false orDER BY rnd(-(C.log_ID+" & rnd() & "))")
+             	SQLQueryNums=SQLQueryNums+1
+             	TempVar=""
+             	Do While Not Random_sql.EOF
+             	    if Random_sql("cate_Secret") then 
+                       blog_RandomArticle=blog_RandomArticle&TempVar&Random_sql("log_ID")&"|,|"&Random_sql("log_Author")&"|,|"&Random_sql("log_PostTime")&"|,|"&"[隐藏分类日志]"
+             		 elseif Random_sql("log_IsShow") then
+                       blog_RandomArticle=blog_RandomArticle&TempVar&Random_sql("log_ID")&"|,|"&Random_sql("log_Author")&"|,|"&Random_sql("log_PostTime")&"|,|"&Random_sql("log_title")
+             		 else
+                       blog_RandomArticle=blog_RandomArticle&TempVar&Random_sql("log_ID")&"|,|"&Random_sql("log_Author")&"|,|"&Random_sql("log_PostTime")&"|,|"&"[隐藏日志]"
+             		end if
+             		TempVar="|$|"
+             		Random_sql.MoveNext
+             	Loop
+             	Set Random_sql=Nothing
+             	blog_RandomArticle=Split(blog_RandomArticle,"|$|")
+             if action<>2 then
+              dim Random_Items,Random_Item,urlLink
+             	For Each Random_Items IN blog_RandomArticle
+             	 Random_Item=Split(Random_Items,"|,|")
+				if blog_postFile = 2 then
+					urlLink = "article/"&Random_Item(0)&".htm"
+				else 
+					urlLink = "article.asp?id="&Random_Item(0)
+				end if
+             	 RandomArticle=RandomArticle&"<a class=""sideA"" href="""&urlLink&""" title="""&Random_Item(1)&" 于 "&Random_Item(2)&" 发表该日志"&CHR(10)&CCEncode(CutStr(Random_Item(3),25))&""">"&CCEncode(CutStr(Random_Item(3),25))&"</a>"
+             	Next
+              end if
+       end function
+       '处理随机日志内容
+        Dim Random_code
+        if Session(CookieName&"_LastDo")="DelArticle" or Session(CookieName&"_LastDo")="AddArticle" or Session(CookieName&"_LastDo")="EditArticle" then RandomArticle(2)
+    	Random_code=RandomArticle(0)
+        side_html_default=replace(side_html_default,"<$RandomLog$>",Random_code)
+        side_html=replace(side_html,"<$RandomLog$>",Random_code)
+    %>]]></PluginASPCode>
+  <PluginPath><![CDATA[]]></PluginPath>
+  <CreateTableSQL><![CDATA[]]></CreateTableSQL>
+  <UpdateTableSQL><![CDATA[]]></UpdateTableSQL>
+  <DropTable></DropTable>
+  <Author>戒聊</Author>
+  <pubDate>2008-08-01</pubDate>
+  <About><![CDATA[随机日志插件]]></About>
+ </main>
+</PluginInstall>

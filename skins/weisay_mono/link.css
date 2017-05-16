@@ -1,0 +1,32 @@
+﻿/*-----------超链接样式 weisay.com ---------------
+ 说明: 伪类:link :visited :hover分别代表超链接的通常、被访问后、和鼠标接触链接是的样式
+ a标签代表通用超链接样式
+ .menuA代表Blog导航条菜单的样式
+ .titleA代表日志标题的样式
+ .sideA代表侧栏的超链接样式
+ .CategoryA代表树形分类的链接样式
+ .more代表更多链接的样式
+--------------------------------------------------*/
+a:link,a:visited{text-decoration:none;color: #2089cc;}
+a:hover{color:#e23158;text-decoration:underline;}
+
+
+ .menuA:link,.menuA:visited{font-size: 13px;float: left;text-align: center;height:56px;text-align:center;text-decoration:none;color:#999;line-height:52px;border:none;padding:0 10px 0 10px}  
+.menuA:hover{color: #f3193d;line-height:52px;text-decoration:none;background: url('menu3.gif') repeat-x top} 
+.menuB:link, .menuB:visited, .menuB:hover{text-decoration: none;display: block;float: center;text-align: center;line-height:52px;color: #f3193d;background:url('menu1.gif') center}
+
+ .titleA:link,.titleA:visited{text-decoration:none;font-weight:bold;text-align:left;color:#2a2a2a;border:none}
+ .titleA:hover{color: #02509d;text-decoration:underline;}
+
+ .sideA:link,.sideA:visited{color:#7d7d7d;width:210px; height:18px;margin-bottom:2px;line-height:180%;margin-top: 2px;text-decoration:none;overflow:hidden;display:block;}
+ .sideA:hover{text-decoration:underline;height:18px;color:#f3dc19; overflow:hidden;}
+
+.CategoryA:link, .CategoryA:visited{color:#7d7d7d;text-decoration: none;height: 16px;overflow: hidden;margin-bottom: 2px;width: 230px;line-height: 180%;margin-top: 2px;padding-top: 2px;padding-bottom: 4px;}
+.CategoryA:hover{color:#f3dc19;text-decoration:underline;}
+
+ #container #foot a:link,#container #foot a:visited{text-decoration:none;color:#7f8e91;}
+ #container #foot a:hover{text-decoration:underline;color:#33a8e5;}
+
+ .more:link,.more:visited{ display:block; clear:both; color:#666;  margin:17px 0 15px 0;
+height:24px; padding:0 0 0 46px; background:url(read_more.gif) no-repeat left top; text-decoration:none;line-height:24px; }
+ .more:hover{ color:#2089cc; background:url(read_more.gif) no-repeat left bottom; text-decoration:none; }

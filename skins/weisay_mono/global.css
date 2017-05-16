@@ -1,0 +1,43 @@
+﻿ body{  behavior:url("csshover.htc");
+	font-size:12px;
+	margin:0px;
+	text-align:center;
+	color:#555;
+	font-family: Verdana, Arial;
+        background: #f2f2f2;  
+        margin: 0 auto;
+}
+ img{height: auto;margin:0;padding:0;border:0;}
+ p{margin:3px;}
+ select{font-family: Verdana, Arial;font-size:12px;}
+ th{background:#D5CBBE;border-bottom:1px solid #795B50}
+ #editorbody{zoom: 1;}
+ 
+ html body {
+background-image:url(about:blank);
+background-attachment:fixed;
+}
+#roll_top,#roll_bottom {
+	position:relative;
+	cursor:pointer;
+	height:40px;
+	width:15px;
+	}
+#roll_top {
+	background:url(up.png) no-repeat;
+	}
+#roll_bottom {
+	background:url(up.png) no-repeat 0 -40px;
+	}
+#roll {
+	display:block;
+	width:15px;
+	margin-right:-486px;
+	position:fixed;
+	right:50%;
+	top:50%;
+	_margin-right:-485px;
+	_position:absolute;
+	_margin-top:300px;
+	_top:expression(eval(document.documentElement.scrollTop));
+	}

@@ -1,0 +1,48 @@
+#editorbody {
+	BORDER-RIGHT: #a3bec3 1px solid; BORDER-TOP: #a3bec3 1px solid; BORDER-LEFT: #a3bec3 1px solid; BORDER-BOTTOM: #a3bec3 1px solid; BACKGROUND-COLOR: #faf7ef
+}
+#editorHead {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 6px; PADDING-BOTTOM: 6px; PADDING-TOP: 2px
+}
+.editorTools {
+	
+}
+.Toolsbar {
+	PADDING-LEFT: 8px; BACKGROUND: url(bar.gif) no-repeat 2px 5px; FLOAT: left; HEIGHT: 24px
+}
+.ToolsUL {
+	PADDING-RIGHT: 2px; DISPLAY: inline; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; MARGIN: 0px; PADDING-TOP: 2px; LIST-STYLE-TYPE: none
+}
+.ToolsUL LI {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; FLOAT: left; PADDING-BOTTOM: 2px; PADDING-TOP: 2px
+}
+.ToolsUL LI SELECT {
+	FONT-SIZE: 12px
+}
+.Toolsbutton:link {
+	BORDER-RIGHT: #faf7ef 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #faf7ef 1px solid; DISPLAY: block; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; BORDER-LEFT: #faf7ef 1px solid; WIDTH: 16px; PADDING-TOP: 2px; BORDER-BOTTOM: #faf7ef 1px solid; HEIGHT: 16px
+}
+.Toolsbutton:visited {
+	BORDER-RIGHT: #faf7ef 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #faf7ef 1px solid; DISPLAY: block; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; BORDER-LEFT: #faf7ef 1px solid; WIDTH: 16px; PADDING-TOP: 2px; BORDER-BOTTOM: #faf7ef 1px solid; HEIGHT: 16px
+}
+.Toolsbutton:hover {
+	BORDER-RIGHT: #ccc 1px solid; BORDER-TOP: #faf7ef 1px solid; BACKGROUND: #faf7ef; BORDER-LEFT: #faf7ef 1px solid; BORDER-BOTTOM: #ccc 1px solid
+}
+.Smilie:link {
+	BORDER-RIGHT: #fff 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #fff 1px solid; DISPLAY: block; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; BORDER-LEFT: #fff 1px solid; WIDTH: 20px; PADDING-TOP: 2px; BORDER-BOTTOM: #fff 1px solid; HEIGHT: 20px
+}
+.Smilie:visited {
+	BORDER-RIGHT: #fff 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #fff 1px solid; DISPLAY: block; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; BORDER-LEFT: #fff 1px solid; WIDTH: 20px; PADDING-TOP: 2px; BORDER-BOTTOM: #fff 1px solid; HEIGHT: 20px
+}
+.Smilie:hover {
+	BORDER-RIGHT: #316ac5 1px solid; BORDER-TOP: #316ac5 1px solid; BACKGROUND: #c1d2ee; BORDER-LEFT: #316ac5 1px solid; BORDER-BOTTOM: #316ac5 1px solid;width:50px;height:50px
+}
+.UBBSmiliesPanel {
+	BORDER-RIGHT: #000 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #000 1px solid; PADDING-LEFT: 0px; BACKGROUND: #fff; VISIBILITY: hidden; PADDING-BOTTOM: 0px; BORDER-LEFT: #000 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #000 1px solid; POSITION: absolute; TEXT-ALIGN: left
+}
+.editorContent {
+	PADDING-RIGHT: 6px! important; PADDING-LEFT: 4px! important; PADDING-BOTTOM: 6px! important; WIDTH: 97%; PADDING-TOP: 0px! important; TEXT-ALIGN: center
+}
+.editTextarea {
+	BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 1px; BORDER-TOP: #ccc 1px solid; PADDING-LEFT: 1px; FONT-SIZE: 12px; BACKGROUND: #faf7ef; PADDING-BOTTOM: 1px; OVERFLOW: auto; BORDER-LEFT: #ccc 1px solid; WIDTH: 100%; PADDING-TOP: 1px; BORDER-BOTTOM: #ccc 1px solid; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; HEIGHT: 100px; TEXT-ALIGN: left
+}

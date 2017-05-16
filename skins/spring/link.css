@@ -1,0 +1,18 @@
+﻿/*-----------FatMouse.cn/blog/-------*/
+ a:link,a:visited{text-decoration:none;color: #30A8C8;}
+ a:hover{color:#8DC63F;text-decoration:none;}
+.menuA:link,.menuA:visited{float:left;height:20px;text-align:center;padding:0px 4px 0px 4px;line-height:140%;font-weight:bold;color:#30A8C8;font-size:12px;}    
+ .menuA:hover{color:#E5732F;text-decoration:none;} 
+ .titleA:link,.titleA:visited{text-decoration:none;font-weight:bold;text-align:left;color:#43A200;}
+ .titleA:hover{color: #68CBDD;text-decoration:none;}
+.sideA:link,.sideA:visited{border-bottom: dashed 1px  #ECEBE6;
+ height:16px;margin-bottom:2px;width:250px;line-height:180%;color:#049FBD;
+margin-top: 2px;padding-top: 3px;padding-bottom: 3px;text-decoration:none;overflow:hidden;display:block;}
+.sideA:hover{text-decoration:none;height:16px;color:#6AB901;
+ border-bottom: dashed 1px  #C7D9D2;overflow:hidden;}
+.CategoryA:link,.CategoryA:visited{ text-decoration:none;height:16px;overflow:hidden;margin-bottom:2px; line-height:200%; border-bottom: dashe 1px  #DDD6C2;margin-top: 2px;padding-top: 2px;padding-bottom: 4px;color:#049FBD;}
+ .CategoryA:hover{text-decoration:none;height:16px;overflow:hidden;color:#F46B21;border-bottom: dashed 1px  #DFEFF9;}
+ .more:link,.more:visited{padding-left:0px;margin:0px;text-decoration:none;color:#30A8C8;}
+ .more:hover{color:#FD0085;text-decoration:none;} 
+
+ /*---超链接样式定义结束---*/

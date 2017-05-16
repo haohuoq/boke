@@ -1,0 +1,33 @@
+﻿.tixu{ margin:0 ; padding:0}
+.tixu ul{ padding:0 ; margin:0; text-align:left }
+.tixu li{ float:left; margin:0; padding:4px 0 14px 0; width:770px; clear:both;border-bottom: solid  1px #999999;text-align:center; background-color:#FFFFFF;list-style-type:none }
+.tipxu1{float:left; width:36px; margin:18px 0 0 0; text-align:center}
+.timxu1{float:left; width:190px; margin:16px 0 0 0; text-align: center}
+.tiuxul{float:left; width:340px; margin:16px 0 0 10px; text-align:left}
+.tizxu{float: right; width:150px; margin:5px 3px 0 0; text-align:center }
+.titext{ margin:0; padding:0;border:1px #84B0C7 solid;}
+input.anc{ border:1px #84B0C7 solid;}
+input.anb{ border:1px #84B0C7 solid;}
+input.an1{
+ background:#fff url(../images/Control/button.png);border:1px solid #9EA9C5;padding:2px 2px 0px 2px;margin-bottom:0px;
+}
+
+.timxu2{float:left; width:226px; margin:16px 0 0 0; text-align: center}
+.tiuxu{float:left; width:340px; margin:0 0 0 10px; text-align:left}
+.tizxu2{float: right; width:150px; margin:16px 5px 0 0; text-align:center; color:#ff0000 }
+
+
+/**/
+.titou{text-align: center;font-weight: bold;}
+.tjiao{font-size: 12px;color: #333333; text-align:left}
+.tjiao ul{ text-align:left; background-color:#FFFFFF;padding:0 ; margin:0;}
+.tjiao li{float: left;width: 750px;line-height: 22px;padding:3px 0 ; margin:0;}
+.tjiaospan{text-align: right;height: auto;float: left;width:250px;}
+.tjiao textarea{ width:180px; margin-top:2px;font-size: 9pt;color: #397FE9; height:70px}
+.tjiao label{color: #FF0101;}
+.adxinr{float:left;width:170px; text-align:right; color:#FFFFFF;}
+.adxinzr{float:left;width:500px; text-align:left; color:#66CCFF;}
+.adxinrz{float:left;width:200px; text-align:right; color:#000;}
+.adxinl{float:left;width:185px;}
+.adxinlz{float:left;width:250px;}
+/**/

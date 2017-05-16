@@ -1,0 +1,57 @@
+﻿<%ST(A)%>佚名<%ST(A)%>174<%ST(A)%>
+		<div class="Content">
+			<div class="Content-top"><div class="ContentLeft"></div><div class="ContentRight"></div>
+				 
+				 <h1 class="ContentTitle"><img src="images/icons/3.gif" style="margin:0px 2px -4px 0px;" alt="" class="CateIcon"/><a class="titleA" href="article/xinqing/205.html">我想要的幸福是什么</a></h1>
+				 <h2 class="ContentAuthor">作者:佚名 日期:2011-11-10</h2>
+			</div>
+			<div id="log_205">
+				<div class="Content-body">
+					 <p><img alt="" style="width: 457px; height: 294px" src="http://www.yikexun.cn/uploads/allimg/101120/23_101120122909_1.jpg" /></p>
+<p>也许，真的是爱情这根弦断了，又或许曾经真爱过，伤的深，痛入骨，才会有今天极度消极的我。<br />
+<br />
+有时候也会有想要结婚的念头闪过，但又担心着种种不幸会在我身上上演。尤其是最近和一博友聊过几次后，我真的该重新审视自己了<br />
+<br />
+真的不明白现在男人心目中理想的女孩是怎样的？究竟是男人们要求的太多？还是现在的女同胞们本就太轻浮与懒惰又虚荣或强悍呢？这一切我都不明了，曾经也扪心自问过，终究还是个谜。</p>
+					 <p class="readMore"><a href="article/xinqing/205.html" class="more"><span>查看更多...</span></a></p>
+					 <p class="tags">Tags: <a href="default.asp?tag=%E6%83%85%E6%84%9F%E6%97%A5%E5%BF%97">情感日志</a><a href="http://technorati.com/tag/情感日志" rel="tag" style="display:none">情感日志</a> </p>
+				</div>
+				<div class="Content-bottom"><div class="ContentBLeft"></div><div class="ContentBRight"></div>
+						分类:<a href="default.asp?cateID=3" title="">心情日记</a> | <a href="?id=205">固定链接</a> | <a href="article/xinqing/205.html#comm_top">评论: 0</a> | <a href="trackback.asp?tbID=205&amp;action=view" target="_blank">引用: 0</a> | 查看次数: <$log_viewC$>
+							 <$editRight$>
+			    </div>
+			</div>
+		</div>
+	<%ST(A)%>
+		<tr>
+			<td valign="top">
+			    <a href="default.asp?cateID=3" ><img border="0" alt="查看 心情日记 的日志" src="images/icons/3.gif" style="margin:0px 2px -3px 0px"/></a>
+				<a href="article/xinqing/205.html" title="作者:佚名 日期:2011-11-10">我想要的幸福是什么</a>
+			</td>
+			<td valign="top" width="60"><nobr><a href="article/xinqing/205.html#comm_top" title="评论">0</a> | <a href="trackback.asp?tbID=205&amp;action=view" target="_blank" title="引用通告">0</a> | <span title="查看次数"><$log_viewC$></span></nobr></td>
+		</tr>
+   <%ST(A)%>
+		<div class="Content">
+			<div class="Content-top"><div class="ContentLeft"></div><div class="ContentRight"></div>
+				 
+				 <h1 class="ContentTitle"><img src="images/icons/3.gif" style="margin:0px 2px -4px 0px;" alt="" class="CateIcon"/><a class="titleA" href="article/xinqing/205.html"><$Show_Title$></a></h1>
+				 <h2 class="ContentAuthor">作者:佚名 日期:2011-11-10</h2>
+			</div>
+			<div id="log_205">
+				<div class="Content-body">
+					 <$log_Secret$>
+				</div>
+				<div class="Content-bottom"><div class="ContentBLeft"></div><div class="ContentBRight"></div>
+						分类:<a href="default.asp?cateID=3" title="">心情日记</a> | <a href="?id=205">固定链接</a> | <a href="article/xinqing/205.html#comm_top">评论: 0</a> | <a href="trackback.asp?tbID=205&amp;action=view" target="_blank">引用: 0</a> | 查看次数: <$log_viewC$>
+							 <$editRight$>
+			    </div>
+			</div>
+		</div>
+   <%ST(A)%>
+		<tr>
+			<td valign="top">
+			    <a href="default.asp?cateID=3" ><img border="0" alt="查看 心情日记 的日志" src="images/icons/3.gif" style="margin:0px 2px -3px 0px"/></a>
+				<a href="article/xinqing/205.html" title="作者:佚名 日期:2011-11-10"><$Show_Title$></a>
+			</td>
+			<td valign="top" width="60"><nobr><a href="article/xinqing/205.html#comm_top" title="评论">0</a> | <span title="引用通告">0</span> | <span title="查看次数"><$log_viewC$></span></nobr></td>
+		</tr>

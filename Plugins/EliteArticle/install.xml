@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PluginInstall>
+ <main>
+  <PluginName>EliteLogForPJBlog</PluginName>
+  <PluginTitle>Elite Article</PluginTitle>
+  <PluginType>sidebar</PluginType>
+  <PluginHtmlCode><![CDATA[<$EliteLog$>]]></PluginHtmlCode>
+  <PluginASPCode><![CDATA[<%
+	function EliteArticle(ByVal action)
+		dim blog_EliteArticle
+		if Not IsArray(Application(CookieName&"_blog_EliteArticle")) or action=2 Then
+			dim Elites,Elite
+			set Elites=conn.Execute("SELECT top 15 C.*,L.cate_ID,L.cate_Secret FROM blog_Content AS C,blog_Category AS L where L.cate_ID=C.log_CateID and L.cate_Secret=false and C.log_IsDraft=false and C.log_level='level5' order by log_PostTime Desc")
+			SQLQueryNums=SQLQueryNums+1
+			TempVar=""
+			do until Elites.EOF
+				if Elites("cate_Secret") then
+					Elite=Elite&TempVar&Elites("log_ID")&"|,|"&Elites("log_Author")&"|,|"&Elites("log_PostTime")&"|,|"&"[隐藏分类日志]"
+				elseif Elites("log_IsShow") then
+					Elite=Elite&TempVar&Elites("log_ID")&"|,|"&Elites("log_Author")&"|,|"&Elites("log_PostTime")&"|,|"&Elites("log_title")
+				else
+					Elite=Elite&TempVar&Elites("log_ID")&"|,|"&Elites("log_Author")&"|,|"&Elites("log_PostTime")&"|,|"&"[隐藏日志]"
+				end if
+				TempVar="|$|"
+				Elites.movenext
+			loop
+			set Elites=nothing
+			blog_EliteArticle=Split(Elite,"|$|")
+			application.Lock
+			application(CookieName&"_blog_EliteArticle")=blog_EliteArticle
+			application.unlock
+		else
+			blog_EliteArticle=application(CookieName&"_blog_EliteArticle")
+		end if
+		
+		if action<>2 then
+		  Dim urlLink
+		  dim EliteArticle_Items,EliteArticle_Item
+		  For Each EliteArticle_Items IN blog_EliteArticle
+			EliteArticle_Item=Split(EliteArticle_Items,"|,|")
+			if blog_postFile = 2 then
+				urlLink = "article/"&EliteArticle_Item(0)&".htm"
+			else 
+				urlLink = "article.asp?id="&EliteArticle_Item(0)
+			end if
+			EliteArticle=EliteArticle&"<a class=""sideA"" href="&urlLink&" title="""&EliteArticle_Item(1)&" 于 "&DateToStr(EliteArticle_Item(2),"Y/m/d H:I A")&" 发表该日志"&CHR(10)&CCEncode(CutStr(EliteArticle_Item(3),25))&""">"&CCEncode(CutStr(EliteArticle_Item(3),25))&"</a>"
+		  Next
+		end if
+	end function		
+	'处理精华日志内容
+	Dim Elite_code
+	if Session(CookieName&"_LastDo")="DelArticle" or Session(CookieName&"_LastDo")="AddArticle" or Session(CookieName&"_LastDo")="EditArticle" then EliteArticle(2)
+	Elite_code=EliteArticle(0)
+	side_html_default=replace(side_html_default,"<$EliteLog$>",Elite_code)
+	side_html=replace(side_html,"<$EliteLog$>",Elite_code)
+  %>]]></PluginASPCode>
+  
+  <PluginPath><![CDATA[]]></PluginPath>
+  <SettingFile></SettingFile>
+  <CreateTableSQL><![CDATA[]]></CreateTableSQL>
+  <UpdateTableSQL><![CDATA[]]></UpdateTableSQL>
+  <DropTable></DropTable>
+  <Author>番茄红了</Author>
+  <pubDate>2006-02-13</pubDate>
+  <About><![CDATA[PJblog精华日志插件1.0(侧边栏)]]></About>
+ </main>
+</PluginInstall>

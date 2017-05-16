@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PluginInstall>
+ <main>
+  <PluginName>QQconnect</PluginName>
+  <PluginTitle>用QQ登录</PluginTitle>
+  <PluginType>sidebar</PluginType>
+  <PluginHtmlCode><![CDATA[
+<!--QQ一键登录代码开始-->
+<a href='http://www.54bq.com/boke/Plugins/QQconnect/redirect_to_login.asp'>
+<img src='Plugins/QQconnect/img/qq_login.png' border=0>
+</a>
+<!--QQ一键登录代码结束-->
+]]></PluginHtmlCode>
+  <PluginASPCode><![CDATA[]]></PluginASPCode>
+  <PluginPath><![CDATA[]]></PluginPath>
+  <SettingFile></SettingFile>
+  <CreateTableSQL><![CDATA[]]></CreateTableSQL>
+  <UpdateTableSQL><![CDATA[]]></UpdateTableSQL>
+  <DropTable></DropTable>
+  <Author>双木杉子</Author>
+  <pubDate>2011-06-13</pubDate>
+  <About><![CDATA[QQ一键登录(侧边栏)]]></About>
+ </main>
+</PluginInstall>

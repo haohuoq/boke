@@ -1,0 +1,44 @@
+﻿/*photo*/
+.picshow{display: table;margin-left: auto;margin-right: auto;text-align: center;}
+.picx {width: 125px;float: left;border: 0px solid #CCC;margin: 0px 3px !important;margin: 0px 1px;padding: 2px!important;padding: 1px;display: inline;text-align: center;font-size: 12px;vertical-align: middle;}
+.atpic,.picmt a{float: left;border: 1px dashed #84B0C7;margin: 0px 3px 1px 3px;padding: 2px;display: inline;text-align: center;width: 120px;height: 120px;overflow: hidden;line-height: 120px;font-size: 12px !important;font-size: 108px;background-image: url('img/bga.gif');}
+.edpictxt{float: left;margin: 3px!important;margin: 2px;width: 125px!important;width: 122px;border: 1px solid #7db1ee;}
+.edpictxt1{ text-align:left;border: 1px solid #fff;margin: 2px;*margin: 1px;padding-left: 1px;padding-top: 1px;}
+.editinput1{ width:115px;color:red; border: 1px solid red;background-color: #BFDFFF}
+.editinput2{ width:115px; border: 1px solid #FFFFFF;cursor:pointer;}
+.edtxh { display:none;}
+.red{color: red;}
+/*pagefoot*/
+/*幻灯导航*/
+.next_to{width: 600px;display: table;margin-left: auto;margin-right: auto;text-align: left;}
+.next_to img{border:none}
+.next_Rr{width: 210px;float: right;padding-top: 2px;text-align: right;}
+.next_Rz{width: 30px; float: right;font-weight: bold;font-size: 12px;padding-top: 4px;font-family: arial;}
+.next_zz{width: 120px;float: right;font-weight: bold;font-size: 12px;padding-top: 4px;font-family: arial;}
+.next_az{width: 90px; float: right;padding-top: 2px; text-align:right;}
+.next_zt1{float: left; width:180px; }
+.next_zt2{float: left;width:240px;}
+/*幻灯模式导航1*/
+.next_ak    {text-align: left;float: left;}
+.next_ak li img {width: 17px;height: 16px;}
+.next_ak ul {height: 25px;}
+.next_ak li {}
+.next_ak .a {float: left; padding-top: 3px;}
+.next_ak .b {float: left; padding-top: 3px; text-align: center;}
+.next_ak .c {float: left; padding-top: 3px; text-align: center;}
+.next_ak .b a      {padding-right: 2px; background: url(img/top_a_4.gif) no-repeat right 0px; font-weight: bold; font-size: 12px; float: left;margin-left: 3px; width: 20px;COLOR: #397FE9;padding-top: 0px;font-family: arial; height: 18px;}
+.next_ak .b a:hover{padding-right: 2px; background: url(img/top_a.gif)   no-repeat right 0px; COLOR: red;}
+.next_ak .b .on    {padding-right: 2px; background: url(img/top_a.gif)   no-repeat right 0px; COLOR: red;}
+.next_ak .off      {padding-right: 2px; background: url(img/top_a_4.gif) no-repeat right 0px; font-weight: bold; font-size: 12px; float: left; margin-left: 3px;width: 20px;padding-top: 0px;}
+.next_ak .log      {padding-left: 25px; background: url('img/loading.gif')no-repeat 10px 6px;height: 18px;width: 250px;font-weight: bold;font-size: 12px;padding-top: 2px!important;padding-top: 4px;font-family: arial;}
+.next_ak .c a      {padding-right: 2px; font-weight: bold; font-size: 12px; float: left;margin-left: 3px; width: 20px;COLOR: #397FE9;padding-top: 0px;font-family: arial; height: 18px;}
+.next_ak .c .no    {padding-right: 2px; font-weight: bold; font-size: 12px; float: left;margin-left: 3px; width: 20px;font-family: arial; height: 18px}
+/*幻灯模式*/
+.showedit1{ display:none; }
+.showedit{ display: block; background-color:#F6F6F6; clear:both; width:100%;  position:relative; border:#CCC 1px dotted}
+.showedit input{ width:400px}
+.showedit .anniu{ margin-left:51px}
+.showedit textarea{ width:400px;}
+.showedit input.an1{  background:#fff;border:1px solid #9EA9C5;padding:1px; height:20px; width:90px; margin-left:5px;margin-right:5px }
+.showedit ul{ list-style:none}
+.showedit li{ margin:0px 5px;}

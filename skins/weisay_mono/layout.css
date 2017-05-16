@@ -1,0 +1,128 @@
+﻿  /*---主体样式 weisay.com ---*/
+  #container{width:930px;margin:0 auto;text-align:center;background:url('side.gif') repeat-y center top}
+  #FlashHead{position: absolute;width:100%;left:0px;}
+  /*---顶部样式 weisay.com ---*/
+  #container #header{margin:0 auto;width:930px;overflow:hidden;background:#f2f2f2 url('header.gif') no-repeat center bottom;height:125px;}
+  #container #header #blogname{padding:20px 0px 4px 6px;height:30px;font-size:24px;color:#333;text-align:left;font-weight:bold;}
+  #container #header #blogname #blogTitle{padding:2px 0px 0px 0px;font-size:13px;height:21px;color:#aaa;font-weight:normal;}
+ #container #header #menu{padding:29px 2px 0px 30px !important;padding:7px 2px 0px 30px;text-align:left;font-size:13px;/*visibility:hidden;*/}
+  #container #header #menu #Left{width:0px;float:left;}
+  #container #header #menu #Right{width:0px;float:right;}  
+  #container #header #menu ul{list-style:none;margin:-63px 2px 0px 2px!important;margin:-63px 2px 0px 1px;padding:0px;height:56px;line-height:56px;float:right;background: url('menu2.gif') repeat-x top} 
+  #container #header #menu ul li{float:left;height:56px;}  
+   .menuL{width:7px;background: url('menu_left.gif') repeat-x;}
+   .menuR{width:7px;background: url('menu_right.gif') repeat-x;}  
+   .menuDiv{width:1px;padding:0px;height:56px;background:url(menu4.gif) no-repeat top;}/*---菜单分割线---*/
+
+  /*---内容样式--- weisay.com ---*/
+  #container #Tbody{width:930px;margin:0 auto;text-align:center;}
+  /*---工具条--*/
+  #sidebar{float:right;width:230px;text-align:left;color:#7d7d7d;overflow:hidden;}
+  #innersidebar{}
+  #sidebar-topimg{}
+  #sidebar-bottomimg{}
+
+  /*---工具箱样式--- weisay.com ---*/
+  .sidepanel{margin:0 auto !important;margin:0px;}
+  .Ptitle{height:22px;line-height:140%;text-align:left;padding:5px 0px 0px 10px;font-size:14px;margin:0px;color:#999;font-family:微软雅黑;}  
+  .Pcontent{text-align:left;padding:8px 14px 8px 10px;line-height:180%;}
+  .Pfoot{overflow:hidden;height:1px;background:url(dot1.gif) repeat-x top;margin:0 10px 0 0} 
+
+
+  /*---主内容--- weisay.com ---*/ 
+  #mainContent{float:left;*margin-top:-14px !important;margin:0 auto;text-align:left;width:680px;}
+  #innermainContent{overflow:hidden;}
+  #mainContent-topimg{overflow:hidden;}
+  #mainContent-bottomimg{overflow:hidden;}
+  .content-width{margin:0 anto;width:100%}/*--主内容元素的全局宽度--*/
+  /*---主内容页数--- weisay.com ---*/
+  .pageContent{margin:5px 9px 5px 90px; text-align:left; height:30px}
+  .NavTitle{float:left;}
+  .page{padding-left:4px;padding-right:0px;height:30px;font-size:11px;}
+  .page ul{list-style:none;margin:0px;padding:0px;color:#fff;} 
+  .page ul li{float:left;padding:0px 0px 0px 0px;} 
+  .page ul li.PageL {width:1px;height:30px;}
+  .page ul li.PageR {width:1px;height:30px;}
+  .PageLbutton{}
+  .PageRbutton{}
+.page ul li a{width:30px;text-align:center;height:30px;line-height:30px;padding:0px 0px 0px 0px;display:inline-block;text-decoration:none;color: #888;background:#fff url('pager1.gif') top;}
+.page ul li a:visited{color: #888;}
+.page ul li a:hover{color:#888;text-decoration:none;background:#fff;background:#fff url('pager1.gif') bottom;}
+.page ul li strong{color:#fff;text-decoration:none;background:#fff url('pager2.gif');width:30px;height:30px;line-height:30px;text-align:center;padding:0px 0px 0px 0px;display:inline-block;text-decoration:none;}
+  /*---内容框--- weisay.com ---*/
+  .Content{margin:0 auto;}    
+  /*---日志标题框--- weisay.com ---*/
+  .Content-top{height:55px;}
+  .Content-top .ContentLeft{width:0px;float:left;}
+  .Content-top .ContentRight{width:0px;float:right;}
+  .Content-top ul{list-style:none;margin:0 auto;padding:0px}
+  .Content-top .ContentTitle{margin:0px;font-size:15px;padding:8px 0 10px 1px;margin-left:95px;color:#02509d;background:url(stripe1.gif) repeat-x bottom;font-family:微软雅黑, Verdana, Arial;}
+  .Content-top .ContentAuthor{display:none} 
+.Content-top .CateIcon{display:none}
+
+/*---日志标题小日历样式--- weisay.com ---*/
+.Content-top .CateIconSP {float:left;width:80px; height:55px;}
+.Content-top .DateYM {text-align:center;font-size:12px;color:#fff; padding:4px 0px 3px 5px;}
+.Content-top .DateDay {text-align:center;font-size:23px;color:#2089cc;line-height:28px;font-weight: bold;font-family:Georgia,Arial,"Courier New"}
+
+  /*---日志内容框--- weisay.com ---*/
+  .Content-body{margin:5px auto;text-align:left;overflow:hidden;width:83%;line-height:150%;padding-left:95px}
+ #related_tag, #wbc_tag{margin-left:-85px} 
+  /*---日志内容底部--- weisay.com ---*/
+  .Content-bottom{padding:0px;text-align:right;height:25px;padding-bottom:5px;padding-right:5px;background:url(line.gif) no-repeat left bottom;margin:8px 0px 12px 0px}
+  .Content-bottom .ContentBLeft{width:0px;float:left;}
+  .Content-bottom .ContentBRight{width:0px;float:right;}  
+  .Content-bottom ul{list-style:none;margin:0px;padding:6px 6px 0px 0px;color:#f7eedb} 
+  .Content-bottom ul li{display:inline;padding:0px 0px 0px 2px;}
+  .Content-bottom ul li.bDiv{}
+  /*---日志其他信息--- weisay.com ---*/
+  .Content-Info {margin:0px 24px 6px 100px;padding:0px}
+  .Content-Info ul{list-style:none;margin:0px;padding:0px;height:16px;text-align:right}
+  .Content-Info ul li.InfoAuthor{float:left;width:450px;text-align:left;display:inline}
+  .Content-Info ul li.InfoOther{display:inline}
+
+  /*--评论框--- weisay.com --- */
+  .comment{text-align:left;margin:0px 9px 10px 29px;border:1px solid #ccc;background:#eee;}
+  .commentinfo{font-size:11px;color:#333;}
+  .commenttop{height:22px;padding:1px;border-bottom:1px solid #dfdfdf;background:#eee;margin:1px;}
+  .commentcontent{padding:8px;line-height:140%;overflow:hidden;width:92%;}
+/*  .Gravatar{float: left; width: 55px; height: 47px; margin-top:4px;margin-left:95px;_margin-left:47px; background:url(gravatar.gif) no-repeat;}
+  .Gravatar:hover{background:url(gravatar.gif) 0 -47px no-repeat}
+  .Gravatar img {float: left;height:40px; width:40px; padding: 2px 0px 0px 2px;}
+  .Gravatar2{ margin:5px 0px 0px 4px; padding:2px; border:1px solid #EFEFEF; background: #ffffff; width:40px}
+*/
+  /*---UBB框 weisay.com ---*/ 
+  .UBBPanel{background:#fafafa;border:1px #CCC solid;margin-top:10px;}
+  .UBBTitle{font-weight:bold;padding:4px;background:#fafafa}
+  .UBBContent{padding:6px;line-height:160%;}
+  .UBBContent TEXTAREA {width:475px;margin-bottom:2px;font-size:12px;}
+  :link.UBBLink,:visited.UBBLink{font-size:11px;font-family:verdana;}
+
+/*---管理员回复框 weisay.com ---*/ 
+  .UBBTitleA{background:#fff url(stripe3.gif);padding:4px;font-weight:bold;}
+  .replayPanel{background:#fafafa url(stripe3.gif);color:#666;border:1px solid #dfdfdf ;width:98%;_width:95%;margin:15px 4px 0px 5px;} 
+   .UBBTitle2{padding:4px 4px 4px 0px;color:#2089cc; margin:-50px 0px 0px 60px; width:88%;font-weight:bold} 
+
+  /*---信息框 weisay.com ---*/
+  #MsgContent{border:1px solid #ccc;width:500px;padding:1px; background:#fff url(stripe2.gif);margin:0 auto;}
+  #MsgContent #MsgHead{padding:4px;color:#5a5a5a;text-align:center;font-weight:bold;}
+  #MsgContent #MsgBody{padding:4px;line-height:180%;} 
+
+  .LDialog{border:1px solid #795B50;margin:3px auto;padding:1px;}
+  .LDialog .LHead{background:#BBA097;padding:1px;color:#8f4b14;text-align:center;font-weight:bold;}
+  .LDialog .LBody{padding:4px;line-height:200%;} 
+
+
+  /*---信息框图标以及文字--- weisay.com ---*/
+  .MessageText{height:60px;margin-right:38px;}
+  .MessageIcon{width:48px;height:48px;float:left;}
+  .ErrorIcon{width:48px;height:48px;float:left;}
+  .WarningIcon{width:48px;height:48px;float:left;}   
+  .QuestionIcon{width:48px;height:48px;float:left;}
+
+  /*---底部样式--- weisay.com ---*/
+  #container #foot{font-family:微软雅黑, Verdana, Arial;font-size:12px;margin: 0 auto;padding-top:34px;background:#f2f2f2 url(footer.gif) no-repeat center top;height:56px;with:930px;overflow:hidden;}
+  #container #foot p{margin:2px auto}
+
+  /*---文件上传框样式--- weisay.com ---*/
+  .attachmentBody{margin:0px;font-size:12px;background:#fff}

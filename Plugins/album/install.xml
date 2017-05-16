@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PluginInstall>
+ <main>
+  <PluginName>album</PluginName>
+  <PluginTitle>相册</PluginTitle>
+  <PluginType>function</PluginType>
+  <PluginHtmlCode><![CDATA[]]></PluginHtmlCode>
+  <PluginASPCode><![CDATA[]]></PluginASPCode>
+  <PluginPath><![CDATA[album.asp]]></PluginPath>
+  <SettingFile>setting.xml</SettingFile>
+  <ConfigPath><![CDATA[config.asp]]></ConfigPath>
+  <CreateTableSQL><![CDATA[]]></CreateTableSQL>
+  <UpdateTableSQL><![CDATA[]]></UpdateTableSQL>
+  <DropTable></DropTable>
+  <Author>小锋</Author>
+  <pubDate>2009-01-15</pubDate>
+  <About><![CDATA[PJBlog2 相册插件 - 小锋相册2009版]]></About>
+ </main>
+ <SubItem>
+   <item>
+   <PluginTitle>相片最新评论</PluginTitle>
+     <PluginType>sidebar</PluginType>
+     <PluginHtmlCode><![CDATA[<$Newalbumcom$>]]></PluginHtmlCode>
+     
+   </item>
+   <item>
+     <PluginTitle>相册</PluginTitle>
+     <PluginType>sidebar</PluginType>
+     <PluginHtmlCode><![CDATA[<$Newphoto$>]]></PluginHtmlCode>
+	 <PluginASPCode><![CDATA[]]></PluginASPCode>
+	<PluginASPCode><![CDATA[
+<%
+Dim photoset, photodb, photow, photoh, photos, rndpic, photoconn
+Set photoset = New ModSet
+photoset.open("album")
+photodb = "Plugins/album/"&photoset.getKeyValue("Database")'数据库
+photos = photoset.getKeyValue("photos")'调用数量
+photow = photoset.getKeyValue("photow")'宽尺寸
+photoh = photoset.getKeyValue("photoh")'高尺寸
+rndpic = photoset.getKeyValue("rnd")'随机是否开启 1开 0关
+Set photoconn = Server.CreateObject("ADODB.Connection")
+photoconn.ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source="&Server.MapPath(photodb)&""
+photoconn.Open
+
+Function showphoto()
+    Dim blog_album, photors, photo_Message, imgurl
+    If rndpic <> 0 Then
+        Set photors = photoconn.execute("select top "&photos&" album_ID,album_Urlm,album_class from blog_album where not album_Hidden  order BY rnd(-(album_ID+" & rnd() & "))")
+    Else
+        Set photors = photoconn.execute("select top "&photos&" album_ID,album_Urlm,album_class from blog_album where not album_Hidden  order by album_ID desc")
+    End If
+    TempVar = ""
+    Do While Not photors.EOF
+        imgurl = photors(1)
+        If FileExist(imgurl) Then
+            imgurl = photors(1)
+        Else
+            imgurl="Plugins/album/images/noaspjpeg.jpg"
+        End If
+        photo_Message = photo_Message&TempVar&photors(0)&"|,|"&photors(2)&"|,|"&imgurl
+        TempVar = "|$|"
+    photors.MoveNext
+    Loop
+    photors.close : Set photors=Nothing
+    blog_album = Split(photo_Message,"|$|")
+    Dim photo_Items, photo_Item
+    For Each photo_Items IN blog_album
+        photo_Item = Split(photo_Items,"|,|")
+        showphoto = showphoto&"<object type=""application/x-shockwave-flash"" data=""Plugins/album/swfoto2.swf?image="&photo_Item(2)&"&link=LoadMod.asp?plugins=album&action=Comment&class="&photo_Item(1)&"#"&photo_Item(0)&"&roundCorner=3&windowOpen=_self&isShowLoader=1&loaderColor=0x999999"" width="""&photow&"px"" height="""&photoh&"px"" id=""swfoto2""><param name=""wmode"" value=""opaque""><param name=""movie"" value=""Plugins/album/swfoto2.swf?image="&photo_Item(2)&"&link=LoadMod.asp?plugins=album^action=Comment^class="&photo_Item(1)&"#"&photo_Item(0)&"&roundCorner=3&windowOpen=_self&isShowLoader=1&loaderColor=0x999999"" /></object>."
+    Next
+End function
+
+Function showphotocom()
+    Dim blog_album_com, photocomrs, photocom_message, photoclass
+    Set photocomrs = photoconn.execute("select top 10 * from blog_album_Comment order by album_CommentID desc")
+    TempVar=""
+    Do While Not photocomrs.EOF
+        photocom_message = photocom_message&TempVar&photocomrs(1)&"|,|"&photocomrs(2)&"|,|"&photocomrs(5)&"|,|"&photocomrs(3)&"|,|"&photoconn.execute("select album_class from blog_album where album_ID="&photocomrs("album_ID"))(0)
+        TempVar = "|$|"
+    photocomrs.MoveNext
+    Loop
+    photocomrs.close : Set photocomrs = Nothing
+    blog_album_com = Split(photocom_message,"|$|")
+    Dim photocom_Items, photocom_Item
+    For Each photocom_Items IN blog_album_com
+        photocom_Item = Split(photocom_Items,"|,|")
+        showphotocom = showphotocom&"<a class=""sideA"" href=""LoadMod.asp?plugins=album&action=Comment&class="&photocom_Item(4)&"#"&photocom_Item(0)&""" title="""&photocom_Item(1)&" 于 "&photocom_Item(2)&" 发表评论"&CHR(10)&CCEncode(CutStr(photocom_Item(3),25))&""">"&CCEncode(CutStr(photocom_Item(3),25))&"</a>"
+    Next
+End function
+
+side_html_default=replace(side_html_default,"<$Newphoto$>",showphoto)
+side_html=replace(side_html,"<$Newphoto$>",showphoto)
+side_html_static=replace(side_html_static,"<$Newphoto$>",showphoto)
+side_html_default=replace(side_html_default,"<$Newalbumcom$>",showphotocom)
+side_html=replace(side_html,"<$Newalbumcom$>",showphotocom)
+side_html_static=replace(side_html_static,"<$Newalbumcom$>",showphotocom)
+
+photoconn.close
+set photoconn=nothing
+    %>
+     ]]></PluginASPCode> 
+   </item>
+ </SubItem>
+</PluginInstall>

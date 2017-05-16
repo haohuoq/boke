@@ -1,0 +1,141 @@
+body{
+	background:#CAD7F7;
+	SCROLLBAR-FACE-COLOR: #799AE1; 
+	SCROLLBAR-HIGHLIGHT-COLOR: #799AE1; 
+	SCROLLBAR-SHADOW-COLOR: #799AE1; 
+	SCROLLBAR-DARKSHADOW-COLOR: #799AE1; 
+	SCROLLBAR-3DLIGHT-COLOR: #799AE1; 
+	SCROLLBAR-ARROW-COLOR: #FFFFFF;
+	SCROLLBAR-TRACK-COLOR: #AABFEC;
+	font-size: 12px;
+	font-style: normal;
+	line-height: 18px;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	color: #000000;
+	text-decoration: none;
+	font-family: Verdana;
+}
+
+font.alert{color:#FF0000;}
+font.blue{color:#0000FF}
+
+.tableBorder {
+	BORDER-RIGHT: #000000 1px solid;
+	BORDER-TOP: #000000 1px solid;
+	BORDER-LEFT: #000000 1px solid;
+	BORDER-BOTTOM: #000000 1px solid;
+	BACKGROUND-COLOR: #ffffff;
+	width: 97%;
+}
+
+td.title{        /*表格大标题*/
+	background-image:url(images/admin_bg_1.gif);
+	height:25px;
+	border-color:#FFFFFF;	
+	color:#FFFFFF;
+	text-align:center;
+	font-size: 12px;
+	font-style: normal;
+	font-weight:bold;
+}
+th{        /*表格大标题*/
+	background-image:url(images/admin_bg_1.gif);
+	height:25px;
+	border-color:#FFFFFF;	
+	color:#FFFFFF;
+	text-align:center;
+	font-size: 12px;
+	font-style: normal;
+	font-weight:bold;
+}
+
+td.title2{        /*表格副标题*/
+	background-image:url(images/admin_bg_2.gif);
+	border-color:#FFFFFF;
+	line-height:18px;
+}
+
+td.items{        /*表格小标题2*/
+	background-image:url(images/admin_top_bg.gif);
+	border-color:#FFFFFF;
+	line-height:16px;
+}
+
+td.title3{        /*表格小标题*/
+	background-color: #E4EDF9;
+	border-color:#FFFFFF;
+	line-height:16px;
+}
+
+td.table{        /*表格大标题*/
+	background-color: #F1F3F5;
+	border-color:#FFFFFF;
+	line-height:16px;
+}
+
+td.toptable{        /*顶部导航Char表格*/
+	background-image: url(images/admin_bg_3.gif);
+	line-height:20px;
+	height:22px;
+}
+
+titel_menu{        /*菜单标题*/
+	border-color:#FFFFFF;
+	line-height:16px;
+	background-image: url(images/menu-02.gif);
+	height: 22px;
+}
+
+tr{
+	font-size: 12px;
+	color: #000000; 
+	line-height: 18px;
+	border-color:#FFFFFF;
+}
+
+.copyright {
+	PADDING-RIGHT: 1px; BORDER-TOP: #6595d6 1px dashed; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; FONT: 11px verdana,arial,helvetica,sans-serif; COLOR: #4455aa; PADDING-TOP: 1px; TEXT-DECORATION: none
+}
+td {
+	FONT-SIZE: 12px;
+}
+INPUT {
+FONT-SIZE: 12px}
+TEXTAREA {
+	BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px; FONT-SIZE: 12px; BORDER-BOTTOM-WIDTH: 1px; BORDER-RIGHT-WIDTH: 1px
+}
+SELECT {
+	BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px; FONT-SIZE: 12px; BORDER-BOTTOM-WIDTH: 1px; BORDER-RIGHT-WIDTH: 1px
+}
+SPAN {
+	FONT-SIZE: 12px; POSITION: static
+}
+A:link{COLOR: #000000; TEXT-DECORATION: none ;}
+A:visited{COLOR: #000000; TEXT-DECORATION: none}
+a:hover{color:#333333;text-decoration:underline;}
+.login_lostfocus { border: 1px #333333 Dashed; background-color: #ffffff; font-size: 12px; font-family: Arial; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50)}
+.lostfocus {
+	border: 1px #000000 solid;
+	background-color: #ffffff;
+	font-size: 12px;
+	font-weight: normal;
+}
+.getfocus { border: 1px #08246B solid;background-color: #ffffff; background-image:url(images/input.gif); font-family: Arial; font-size: 12px; }
+.txtlist{
+	padding-right: 5px;
+}
+.TopMenu {
+	font-size: 16px;
+	font-style: normal;
+	color: #000000;
+	display: table-header-group;
+	height: auto;
+	width: auto;
+}
+/* a:link,a:visited{text-decoration:underline; }
+ a:hover{background:#0D407D;color:#000000}
+*/
+ .menuA:link,.menuA:visited{background:#0D407D;color:#ffffff;height:28px;text-align:center;padding:0px 4px 0px 4px;text-decoration:none;color:#ffffff;line-height:210%;border-bottom:2px;}  
+ .menuA:hover{border-bottom:2px solid #fff;color:#f0f0f0} 
